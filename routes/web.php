@@ -10,7 +10,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-//alfay merubah sesuatu
+//alfay merubah sesuatu aku ubah lagi
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
