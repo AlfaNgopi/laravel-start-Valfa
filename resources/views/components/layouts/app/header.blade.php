@@ -134,6 +134,17 @@
                             </div>
                         </button>
                     </form>
+                    <a href="{{ route('api-token') }}"
+                        class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            API Token
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

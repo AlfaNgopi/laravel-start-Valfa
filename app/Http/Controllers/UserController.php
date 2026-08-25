@@ -59,6 +59,19 @@ class UserController extends Controller
         return view('users.index');
     }
 
+    public function getApiToken(Request $request): JsonResponse
+    {
+        $user = $request->user();
+        $token = $user->createToken('api-token')->plainTextToken;
+
+        return response()->json([
+            'status' => 'success',
+            'data' => [
+                'token' => $token,
+            ],
+        ], 200);
+    }
+
     public function export()
     {
         return Excel::download(new UsersExport, 'users-' . date('Y-m-d') . '.xlsx');
